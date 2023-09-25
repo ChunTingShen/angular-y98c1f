@@ -20,7 +20,7 @@ export class BodyComponent implements OnInit {
     this.news.getIds().subscribe((val: any) => {
       // console.log(val);
       for (let i in val) {
-        // add first 6 jobs
+        // fetch first 6 jobs
         if (parseInt(i) < 6) {
           let newsid = val[i];
           this.news.getNews(newsid).subscribe((val: any) => {
