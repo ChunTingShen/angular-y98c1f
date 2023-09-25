@@ -1,0 +1,16 @@
+<div class="outer-card">
+  <h3>Hacker News Jobs Board</h3>
+
+  <div class="inner-card" *ngFor="let item of jobs">
+    <a href="{{ item.url }}"
+      ><b>{{ item.title }}</b></a
+    ><br />
+
+    <span>By {{ item.by }} </span>
+    {{ item.time * 1000 | date: 'MM/d/y, h:mm:ss a' }}
+  </div>
+</div>
+
+<div *ngIf="showButton">
+  <button (click)="getJobs()">Load More Jobs</button>
+</div>

@@ -1,0 +1,32 @@
+button {
+  margin: 10px;
+  padding: 10px;
+  color: white;
+  width: 150px;
+  background-color: red;
+}
+
+h3 {
+  color: red;
+}
+
+.outer-card {
+  margin: 10px;
+  padding: 10px;
+  border-style: solid;
+  border-radius: 0.5em;
+  border-width: 1px;
+  border-color: grey;
+  background-color: honeydew;
+}
+
+.inner-card {
+  margin: 10px;
+  padding: 10px;
+  border-style: solid;
+  border-radius: 0.5em;
+  border-width: 1px;
+  border-color: grey;
+
+  background-color: white;
+}
